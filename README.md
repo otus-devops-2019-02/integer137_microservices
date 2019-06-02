@@ -1,6 +1,32 @@
 # integer137_microservices
 integer137 microservices repository
 
+##"ДЗ Docker-2"
+
+"Создали новый проект в GCP и разрешили доступ приложению."
+
+"Провели установку Docker machine."
+
+"Создали Docker-хост в GCP."
+
+"Сравнили вывод команд docker run."
+
+"Создали образ с приложением. Создали файлы Dockerfile, mongod.conf, db_config, start.sh."
+
+"Наполнили файл Dockerfile командами."
+
+"Создали образ командой ````docker build -t reddit:latest .````."
+
+"Запустили Docker контейнер."
+
+"Зареристрировались на Docker hub."
+
+"Загрузили образ на Docker hub."
+
+"Запустили Docker образ локально."
+
+"Осуществили всевозможные проверки."
+
 ##"ДЗ Docker-1"
 
 "Провели установку Docker."
