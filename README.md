@@ -1,6 +1,32 @@
 # integer137_microservices
 integer137 microservices repository
 
+##"ДЗ Docker-4"
+
+"Запустили контейнер с использованием none-драйвера."
+
+"Сравнили вывод команд ````docker run -ti --rm --network host joffotron/docker-net-tools -c ifconfig```` и ````docker-machine ssh docker-host ifconfig````."
+
+"Запустили несколько раз ````docker run --network host -d nginx````."
+
+"Просмотрели существующие в данный момент net-namespaces."
+
+"Создаем bridge-сеть в docker."
+
+"Запускаем проект внутри bridge-сети."
+
+"Запускаем проект внутри 2-х bridge-сетях."
+
+"Проводим установку docker-compose."
+
+"Создаем файл docker-compose.yml."
+
+"Запускаем проект, используя docker-compose."
+
+"Изменяем docker-compose под кейс с множеством сетей. Параметризируем docker-compose.yml."
+
+"Базовое имя проекта docker-compose можно задать. Задается с помощью параметра --project-name. По умолчанию задается по имени директории."
+
 ##"ДЗ Docker-3"
 
 "Создали новую ветку в репозитории с названием docker-3."
