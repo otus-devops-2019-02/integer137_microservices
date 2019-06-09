@@ -23,6 +23,10 @@ integer137 microservices repository
 
 "Создали файл simpletest.rb в папке reddit."
 
+"Добавили библиотеку для тестирования в reddit/Gemfile приложения."
+
+"Провели описание DEV-окружения."
+
 ""
 
 ##"ДЗ Docker-4"
