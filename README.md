@@ -29,7 +29,9 @@ integer137 microservices repository
 
 "Создаем stage и prod окружения."
 
-""
+"Добавили директиву only. Проверяем."
+
+
 
 ##"ДЗ Docker-4"
 
