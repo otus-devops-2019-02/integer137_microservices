@@ -27,6 +27,8 @@ integer137 microservices repository
 
 "Провели описание DEV-окружения."
 
+"Создаем stage и prod окружения."
+
 ""
 
 ##"ДЗ Docker-4"
