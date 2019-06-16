@@ -1,6 +1,42 @@
 # integer137_microservices
 integer137 microservices repository
 
+##"ДЗ Monitoring-1"
+
+"Создали правило фаервола для Prometheus и Puma."
+
+"Создали Docker хост в GCE."
+
+"Запустили систему мониторинга Prometheus."
+
+"Выбрали метрику prometheus_build_info."
+
+"Просмотрели информацию о метриках Prometheus http://34.76.73.88:9090/metrics."
+
+"Переупорядочили структуру директорий."
+
+"Создаем Docker образ. Определяем конфигурацию Prometheus в файле prometheus.yml."
+
+"Проводим сборку образов при помощи скриптов docker_build.sh."
+
+"Подняли сервисы, определенные в docker/docker-compose.yml."
+
+"Посмотрели список endpoint-ов."
+
+"Остановили post сервис. Наблюдаем за графиком. Восстанавливаем работу приложения."
+
+"Определили Node exporter сервис в docker/docker-compose.yml файле."
+
+"Добавили новый Job в prometheus.yml. Пересоздали Docker-образ Prometheus."
+
+"Пересоздали сервисы командой ````docker-compose up -d````."
+
+"Получим информацию об использовании CPU с помощью метрики node_load1."
+
+"Запушили собранные образы на DockerHub."
+
+"Ссылка на Докерхаб ````https://hub.docker.com/u/integer137````."
+
 ##"ДЗ Gitlab-ci-1"
 
 "Создали новую виртуальную машину с заданными параметрами в GCP."
