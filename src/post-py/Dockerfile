@@ -4,7 +4,7 @@ WORKDIR /app
 ADD . /app
 
 RUN apk update
-RUN apk add gcc py-pip libffi-dev openssl-dev python3-dev build-base
+RUN apk add gcc py-pip libffi-dev openssl-dev python3-dev build-base musl-dev
 RUN pip install --upgrade pip
 RUN pip install -r /app/requirements.txt
 
