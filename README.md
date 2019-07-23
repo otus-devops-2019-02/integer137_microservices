@@ -1,6 +1,28 @@
 # integer137_microservices
 integer137 microservices repository
 
+##"ДЗ Kubernetes-3"
+
+"Разобрали типы сервисов kubernetes."
+
+"Разобрали плагин kube-dns."
+
+"Разобрали тип сервиса LoadBalancer, перенастроили ui-сервис."
+
+"Включили встроенный ingress на кластере GKE."
+
+"Перенастроили ingress."
+
+"Защитили сервис с помощью TLS."
+
+"Разобрали и добавили Network Policy в GKE."
+
+"Добавили хранилище для базы данных."
+
+"Использовали типы хранилища Volume и PersistentVolume."
+
+"Использовали динамическое выделение Volume-ов."
+
 ##"ДЗ Kubernetes-2"
 
 "Провели установку kubectl."
