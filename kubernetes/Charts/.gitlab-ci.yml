@@ -16,12 +16,14 @@ test:
 staging:
   stage: staging
   script:
-    - install_dependencies
-    - ensure_namespace
-    - install_tiller
-    - deploy
+  - install_dependencies
+  - ensure_namespace
+  - install_tiller
+  - deploy
   variables:
     KUBE_NAMESPACE: staging
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
   environment:
     name: staging
     url: http://staging
@@ -39,6 +41,8 @@ production:
     - deploy
   variables:
     KUBE_NAMESPACE: production
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
   environment:
     name: production
     url: http://production
@@ -102,7 +106,7 @@ production:
 
   function install_tiller() {
     echo "Checking Tiller..."
-    helm init
+    helm init --upgrade
     kubectl rollout status -n "$TILLER_NAMESPACE" -w "deployment/tiller-deploy"
     if ! helm version --debug; then
       echo "Failed to init Tiller."

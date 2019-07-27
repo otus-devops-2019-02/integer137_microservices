@@ -14,7 +14,6 @@ build:
     - docker:dind
   script:
     - setup_docker
-    - docker info
     - build
   variables:
     DOCKER_DRIVER: overlay2
@@ -37,6 +36,9 @@ release:
   script:
     - setup_docker
     - release
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
   only:
     - master
 
@@ -195,9 +197,9 @@ stop_review:
   }
 
   function delete() {
-      track="${1-stable}"
-      name="$CI_ENVIRONMENT_SLUG"
-      helm delete "$name" --purge || true
+    track="${1-stable}"
+    name="$CI_ENVIRONMENT_SLUG"
+    helm delete "$name" --purge || true
   }
 
 before_script:
