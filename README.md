@@ -1,6 +1,50 @@
 # integer137_microservices
 integer137 microservices repository
 
+##"ДЗ Kubernetes-5"
+
+"Установили и запустили Prometheus с помощью Helm чарта."
+
+````helm fetch --untar stable/prometheus````
+
+"Внесли необходимые настройки в файл custom_values.yml."
+
+````helm upgrade prom . -f custom_values.yml --install````
+
+"Прошли в web-интерфейс Prometheus по ссылке http://reddit-prometheus."
+
+"Разобрали Targets Prometheus."
+
+"Внесли настройки для для включения node-exporter и kubeStateMetrics."
+
+"Запустили приложение reddit из helm chart'а."
+
+"Вносим настройки для поиска метрик приложений в custom_values.yml."
+
+"Модернизировали конфиг Prometheus для отображения лейблов и аннотаций подов."
+
+"Разбили job reddit-endpoints на 3 по компонентам приложения."
+
+"Установили Grafana."
+
+````helm upgrade --install grafana stable/grafana --set "adminPassword=admin" --set "service.type=NodePort" --set "ingress.enabled=true" --set "ingress.hosts={reddit-grafana}"````
+
+"В Grafana добавили prometheus data-source."
+
+"Добавили самый распространенный dashboard для отслеживания состояния ресурсов k8s."
+
+"Добавляем дашборды из ДЗ по мониторингу."
+
+"Создаем переменную для дашборда."
+
+"Применили Templating."
+
+"Приступили к блоку логирование."
+
+"Запустили стек efk. Установили kibana."
+
+"Создали шаблон. Проверили."
+
 ##"ДЗ Kubernetes-4"
 
 "Провели установку helm. Установили tiller."
